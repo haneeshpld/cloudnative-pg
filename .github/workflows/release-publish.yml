@@ -137,7 +137,7 @@ jobs:
         uses: crazy-max/ghaction-import-gpg@v6
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          passphrase: Haneesh@123
       -
         name: Set GoReleaser environment
         env:
@@ -159,9 +159,9 @@ jobs:
           VERSION: ${{ steps.build-meta.outputs.version }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
-          NFPM_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+          NFPM_PASSPHRASE: Haneesh@123
       -
-        name: Publish Krew
+        name: Publish Krew 
         if: |
           needs.check-version.outputs.is_latest == 'true' &&
           needs.check-version.outputs.is_stable == 'true'
