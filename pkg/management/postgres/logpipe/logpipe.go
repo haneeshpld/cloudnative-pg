@@ -33,8 +33,8 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/fileutils/compatibility"
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/concurrency"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/concurrency"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
 )
 
 // LogPipe creates a pipe for a given file

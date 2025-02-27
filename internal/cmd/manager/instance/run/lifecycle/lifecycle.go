@@ -26,8 +26,8 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/concurrency"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/concurrency"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres"
 )
 
 // PostgresLifecycle implements the manager.Runnable interface for a postgres.Instance

@@ -134,7 +134,7 @@ while read -r pr
 do
     ((i=i+1))
     MSG=$(grep "^$pr|" "$WORKDIR/${MAIN_BRANCH}.csv" | cut -f 3 -d '|')
-    echo "$i. [$MSG](https://github.com/cloudnative-pg/cloudnative-pg/pull/$pr)"
+    echo "$i. [$MSG](https://github.com/haneeshpld/cloudnative-pg/pull/$pr)"
 done < <(diff -B "$WORKDIR/${MAIN_BRANCH}-PR.txt" "$WORKDIR/$branch-PR.txt" | grep '^<' | cut -f 2 -d ' ')
 
 # What's in the release and not in ${MAIN_BRANCH}
@@ -144,7 +144,7 @@ while read -r pr
 do
     ((i=i+1))
     MSG=$(grep "^$pr|" "$WORKDIR/$branch.csv" | cut -f 3 -d '|')
-    echo "$i. [$MSG](https://github.com/cloudnative-pg/cloudnative-pg/pull/$pr)"
+    echo "$i. [$MSG](https://github.com/haneeshpld/cloudnative-pg/pull/$pr)"
 done < <(diff -B "$WORKDIR/${MAIN_BRANCH}-PR.txt" "$WORKDIR/$branch-PR.txt" | grep '^>' | cut -f 2 -d ' ')
 
 # Verify commits without a PR

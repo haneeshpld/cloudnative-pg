@@ -29,9 +29,9 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes"
 
-	cnpgv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils/logs"
+	cnpgv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils/logs"
 )
 
 // clusterLogs contains the options and context to retrieve cluster logs

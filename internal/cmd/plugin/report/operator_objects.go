@@ -28,7 +28,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin"
 )
 
 const (

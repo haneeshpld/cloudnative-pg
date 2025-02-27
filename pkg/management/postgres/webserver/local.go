@@ -31,12 +31,12 @@ import (
 	"k8s.io/client-go/tools/record"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/management/cache"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/url"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/resources/status"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/management/cache"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/url"
+	"github.com/haneeshpld/cloudnative-pg/pkg/resources/status"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 type localWebserverEndpoints struct {

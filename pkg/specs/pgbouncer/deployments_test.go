@@ -22,12 +22,12 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/utils/ptr"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	config "github.com/cloudnative-pg/cloudnative-pg/internal/configuration"
-	pgBouncerConfig "github.com/cloudnative-pg/cloudnative-pg/pkg/management/pgbouncer/config"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	config "github.com/haneeshpld/cloudnative-pg/internal/configuration"
+	pgBouncerConfig "github.com/haneeshpld/cloudnative-pg/pkg/management/pgbouncer/config"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

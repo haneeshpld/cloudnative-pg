@@ -14,14 +14,14 @@ You can install the `cnpg` plugin using a variety of methods.
 
 ```sh
 curl -sSfL \
-  https://github.com/cloudnative-pg/cloudnative-pg/raw/main/hack/install-cnpg-plugin.sh | \
+  https://github.com/haneeshpld/cloudnative-pg/raw/main/hack/install-cnpg-plugin.sh | \
   sudo sh -s -- -b /usr/local/bin
 ```
 
 ### Using the Debian or RedHat packages
 
 In the
-[releases section of the GitHub repository](https://github.com/cloudnative-pg/cloudnative-pg/releases),
+[releases section of the GitHub repository](https://github.com/haneeshpld/cloudnative-pg/releases),
 you can navigate to any release of interest (pick the same or newer release
 than your CloudNativePG operator), and in it you will find an **Assets**
 section. In that section are pre-built packages for a variety of systems.
@@ -34,7 +34,7 @@ For example, let's install the 1.25.0 release of the plugin, for an Intel based
 64 bit server. First, we download the right `.deb` file.
 
 ```sh
-wget https://github.com/cloudnative-pg/cloudnative-pg/releases/download/v1.25.0/kubectl-cnpg_1.25.0_linux_x86_64.deb \
+wget https://github.com/haneeshpld/cloudnative-pg/releases/download/v1.25.0/kubectl-cnpg_1.25.0_linux_x86_64.deb \
   --output-document kube-plugin.deb
 ```
 
@@ -55,7 +55,7 @@ As in the example for `.rpm` packages, let's install the 1.25.0 release for an
 Intel 64 bit machine. Note the `--output` flag to provide a file name.
 
 ```sh
-curl -L https://github.com/cloudnative-pg/cloudnative-pg/releases/download/v1.25.0/kubectl-cnpg_1.25.0_linux_x86_64.rpm \
+curl -L https://github.com/haneeshpld/cloudnative-pg/releases/download/v1.25.0/kubectl-cnpg_1.25.0_linux_x86_64.rpm \
   --output kube-plugin.rpm
 ```
 

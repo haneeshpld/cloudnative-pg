@@ -26,11 +26,11 @@ import (
 	batchv1 "k8s.io/api/batch/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	v1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	utils2 "github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/clusterutils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/storage"
+	v1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	utils2 "github.com/haneeshpld/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/clusterutils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/storage"
 )
 
 // PrintClusterResources prints a summary of the cluster pods, jobs, pvcs etc.

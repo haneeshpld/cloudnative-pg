@@ -31,15 +31,15 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"github.com/cloudnative-pg/machinery/pkg/stringset"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	pluginClient "github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/client"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/repository"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/configuration"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/management/cache"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/constants"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/local"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	pluginClient "github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/client"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/repository"
+	"github.com/haneeshpld/cloudnative-pg/internal/configuration"
+	"github.com/haneeshpld/cloudnative-pg/internal/management/cache"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/constants"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/local"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // errSwitchoverInProgress is raised when there is a switchover in progress

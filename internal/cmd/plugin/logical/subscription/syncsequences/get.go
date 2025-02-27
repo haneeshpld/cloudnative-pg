@@ -26,7 +26,7 @@ import (
 
 	"github.com/jackc/pgx/v5"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin/logical"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin/logical"
 )
 
 const sqlGetSequences = `

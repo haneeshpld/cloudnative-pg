@@ -25,8 +25,8 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/management/controller/slots/infrastructure"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/management/controller/slots/infrastructure"
 )
 
 // ReconcileReplicationSlots reconciles the replication slots of a given instance

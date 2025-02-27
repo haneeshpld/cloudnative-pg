@@ -23,7 +23,7 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/fileutils"
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/pgbouncer/config"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/pgbouncer/config"
 )
 
 // refreshConfigurationFiles writes the configuration files, returning a

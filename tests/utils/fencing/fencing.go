@@ -24,9 +24,9 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
 )
 
 // Method will be one of the supported ways to trigger an instance fencing

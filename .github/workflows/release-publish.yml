@@ -113,8 +113,8 @@ jobs:
         name: Build meta
         id: build-meta
         run: |
-          images='ghcr.io/cloudnative-pg/cloudnative-pg'
-          images="${images},ghcr.io/cloudnative-pg/cloudnative-pg-testing"
+          images='ghcr.io/haneeshpld/cloudnative-pg'
+          images="${images},ghcr.io/haneeshpld/cloudnative-pg-testing"
           commit_sha=${{ github.sha }}
           commit_date=$(git log -1 --pretty=format:'%ad' --date short "${commit_sha}")
 

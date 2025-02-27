@@ -39,14 +39,14 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/plugin/resources"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/constants"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/reconciler/hibernation"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin"
+	"github.com/haneeshpld/cloudnative-pg/internal/plugin/resources"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/constants"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/reconciler/hibernation"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // PostgresqlStatus contains the status of the Cluster and of all its instances

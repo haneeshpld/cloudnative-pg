@@ -23,10 +23,10 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/clusterutils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/operator"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/clusterutils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/operator"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

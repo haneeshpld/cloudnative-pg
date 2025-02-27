@@ -17,7 +17,7 @@ limitations under the License.
 package e2e
 
 import (
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/cloudvendors"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/cloudvendors"
 )
 
 func MustGetEnvProfile() cloudvendors.EnvProfile {

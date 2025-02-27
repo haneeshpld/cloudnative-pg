@@ -32,13 +32,13 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/stringset"
 	"github.com/spf13/cobra"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	pluginClient "github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/client"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/repository"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/configuration"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/management/cache"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/local"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	pluginClient "github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/client"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/repository"
+	"github.com/haneeshpld/cloudnative-pg/internal/configuration"
+	"github.com/haneeshpld/cloudnative-pg/internal/management/cache"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/local"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
 )
 
 var (

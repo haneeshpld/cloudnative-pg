@@ -23,7 +23,7 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // updatePluginsStatus ensures that we load the plugins that are required to reconcile

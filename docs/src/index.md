@@ -27,7 +27,7 @@ native connection pooler based on PgBouncer.
 CloudNativePG was originally built by [EDB](https://www.enterprisedb.com), then
 released open source under Apache License 2.0.
 It has been submitted for the [CNCF Sandbox in September 2024](https://github.com/cncf/sandbox/issues/128).
-The [source code repository is in Github](https://github.com/cloudnative-pg/cloudnative-pg).
+The [source code repository is in Github](https://github.com/haneeshpld/cloudnative-pg).
 
 !!! Note
     Based on the [Operator Capability Levels model](operator_capability_levels.md),
@@ -50,7 +50,7 @@ container images for both the operator and PostgreSQL (the operand).
 ### Operator
 
 The CloudNativePG operator container images are available on the
-[`cloudnative-pg` project's GitHub Container Registry](https://github.com/cloudnative-pg/cloudnative-pg/pkgs/container/cloudnative-pg)
+[`cloudnative-pg` project's GitHub Container Registry](https://github.com/haneeshpld/cloudnative-pg/pkgs/container/cloudnative-pg)
 in three different flavors:
 
 - Debian 12 distroless

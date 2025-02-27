@@ -28,7 +28,7 @@ import (
 	"github.com/google/shlex"
 	"github.com/onsi/ginkgo/v2"
 
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/objects"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/objects"
 )
 
 // Unchecked executes a command and process the information

@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/storage"
+	"github.com/haneeshpld/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/storage"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

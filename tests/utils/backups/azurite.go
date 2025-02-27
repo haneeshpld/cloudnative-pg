@@ -32,13 +32,13 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	v1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/certs"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/deployments"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/objects"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/pods"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/secrets"
+	v1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/certs"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/deployments"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/objects"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/pods"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/secrets"
 )
 
 const (

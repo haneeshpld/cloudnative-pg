@@ -28,8 +28,8 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 type fioCommand struct {

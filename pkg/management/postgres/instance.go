@@ -40,13 +40,13 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/util/retry"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/logpipe"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/pool"
-	postgresutils "github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/utils"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/logpipe"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/pool"
+	postgresutils "github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 
 	// this is needed to correctly open the sql connection with the pgx driver
 	_ "github.com/jackc/pgx/v5/stdlib"

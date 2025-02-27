@@ -37,12 +37,12 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/certs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/environment"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/objects"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/pods"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/pkg/certs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/environment"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/objects"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/pods"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
 )
 
 const (

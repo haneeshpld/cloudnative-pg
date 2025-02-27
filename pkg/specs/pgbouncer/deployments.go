@@ -26,15 +26,15 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	config "github.com/cloudnative-pg/cloudnative-pg/internal/configuration"
-	pgBouncerConfig "github.com/cloudnative-pg/cloudnative-pg/pkg/management/pgbouncer/config"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/url"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/podspec"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils/hash"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	config "github.com/haneeshpld/cloudnative-pg/internal/configuration"
+	pgBouncerConfig "github.com/haneeshpld/cloudnative-pg/pkg/management/pgbouncer/config"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/url"
+	"github.com/haneeshpld/cloudnative-pg/pkg/podspec"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils/hash"
 )
 
 const (

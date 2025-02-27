@@ -20,7 +20,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // SetClusterReadyConditionTX updates the cluster's readiness condition

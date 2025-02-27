@@ -22,8 +22,8 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/management/controller/tablespaces/infrastructure"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/management/controller/tablespaces/infrastructure"
 )
 
 type tablespaceReconcilerStep interface {

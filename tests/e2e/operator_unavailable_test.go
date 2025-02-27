@@ -23,12 +23,12 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/operator"
-	podutils "github.com/cloudnative-pg/cloudnative-pg/tests/utils/pods"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/operator"
+	podutils "github.com/haneeshpld/cloudnative-pg/tests/utils/pods"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/postgres"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

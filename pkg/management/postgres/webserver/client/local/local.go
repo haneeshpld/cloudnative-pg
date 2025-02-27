@@ -19,7 +19,7 @@ package local
 import (
 	"time"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/common"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/common"
 )
 
 // Client is an entity capable of interacting with the local webserver endpoints

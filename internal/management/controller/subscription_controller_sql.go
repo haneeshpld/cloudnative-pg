@@ -24,7 +24,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/lib/pq"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 func (r *SubscriptionReconciler) alignSubscription(

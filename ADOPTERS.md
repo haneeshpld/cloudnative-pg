@@ -14,9 +14,9 @@ to us!
 
 You can add your organization to this list in two ways:
 
-- [Open a pull request](https://github.com/cloudnative-pg/cloudnative-pg/pulls)
+- [Open a pull request](https://github.com/haneeshpld/cloudnative-pg/pulls)
   to directly update this file.
-- [Edit the file](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/ADOPTERS.md)
+- [Edit the file](https://github.com/haneeshpld/cloudnative-pg/blob/main/ADOPTERS.md)
   directly on GitHub.
 
 Use the commit title: **"docs: add <ORGANIZATION_NAME> to `ADOPTERS.md`"** and

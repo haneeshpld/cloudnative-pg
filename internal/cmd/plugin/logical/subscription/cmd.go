@@ -19,10 +19,10 @@ package subscription
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin/logical/subscription/create"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin/logical/subscription/drop"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin/logical/subscription/syncsequences"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin/logical/subscription/create"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin/logical/subscription/drop"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin/logical/subscription/syncsequences"
 )
 
 // NewCmd initializes the subscription command

@@ -26,7 +26,7 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // SetAsOwnedByOperatorDeployment sets the controlled object as owned by the operator deployment.

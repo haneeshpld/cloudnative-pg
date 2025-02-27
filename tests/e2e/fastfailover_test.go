@@ -17,7 +17,7 @@ limitations under the License.
 package e2e
 
 import (
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

@@ -27,10 +27,10 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/objects"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/services"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/objects"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/postgres"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/services"
 )
 
 // ImportDatabaseMicroservice creates a cluster, starting from an external cluster

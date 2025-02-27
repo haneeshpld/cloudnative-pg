@@ -19,7 +19,7 @@ package v1
 import (
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // SecretKeySelectorToCore transforms a SecretKeySelector structure to the

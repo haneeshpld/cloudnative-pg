@@ -23,7 +23,7 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	v1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	v1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // List the available replication slots

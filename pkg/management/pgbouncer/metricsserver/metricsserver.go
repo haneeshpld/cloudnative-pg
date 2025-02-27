@@ -27,8 +27,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/url"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/url"
 )
 
 var (

@@ -24,14 +24,14 @@ import (
 
 	"k8s.io/utils/ptr"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/clusterutils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/exec"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/fencing"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/yaml"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/clusterutils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/exec"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/fencing"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/yaml"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

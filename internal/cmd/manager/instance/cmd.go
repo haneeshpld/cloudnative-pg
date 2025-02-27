@@ -23,14 +23,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/initdb"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/join"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/pgbasebackup"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/restore"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/restoresnapshot"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/run"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance/status"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/initdb"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/join"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/pgbasebackup"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/restore"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/restoresnapshot"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/run"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/instance/status"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
 )
 
 // NewCmd creates the "instance" command

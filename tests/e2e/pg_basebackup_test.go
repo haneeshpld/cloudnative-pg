@@ -17,11 +17,11 @@ limitations under the License.
 package e2e
 
 import (
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/timeouts"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/yaml"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/postgres"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/timeouts"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/yaml"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

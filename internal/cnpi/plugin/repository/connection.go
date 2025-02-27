@@ -23,7 +23,7 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"github.com/jackc/puddle/v2"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/connection"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/connection"
 )
 
 // maxConnectionAttempts is the maximum number of connections attempts to a

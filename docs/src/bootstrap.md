@@ -29,7 +29,7 @@ For more detailed information about this feature, please refer to the
 
 !!! Info
     CloudNativePG is gradually introducing support for
-    [Kubernetes' native `VolumeSnapshot` API](https://github.com/cloudnative-pg/cloudnative-pg/issues/2081)
+    [Kubernetes' native `VolumeSnapshot` API](https://github.com/haneeshpld/cloudnative-pg/issues/2081)
     for both incremental and differential copy in backup and recovery
     operations - if supported by the underlying storage classes.
     Please see ["Recovery from Volume Snapshot objects"](recovery.md#recovery-from-volumesnapshot-objects)

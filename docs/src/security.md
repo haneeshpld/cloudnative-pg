@@ -45,7 +45,7 @@ The following tools are used to identify security issues:
   security and licensing issues.
 
 The CloudNativePG repository has the *"Private vulnerability reporting"* option
-enabled in the [Security section](https://github.com/cloudnative-pg/cloudnative-pg/security).
+enabled in the [Security section](https://github.com/haneeshpld/cloudnative-pg/security).
 This feature allows users to safely report security issues that require careful
 handling before being publicly disclosed. If you discover any security bug,
 please use this medium to report it.
@@ -237,7 +237,7 @@ PostgreSQL `Cluster` resource name.
     [recommended way to access the API server from within a Pod](https://kubernetes.io/docs/tasks/run-application/access-api-from-pod/).
 
 For transparency, the permissions associated with the service account are defined in the
-[roles.go](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/pkg/specs/roles.go)
+[roles.go](https://github.com/haneeshpld/cloudnative-pg/blob/main/pkg/specs/roles.go)
 file. For example, to retrieve the permissions of a generic `mypg` cluster in the
 `myns` namespace, you can type the following command:
 

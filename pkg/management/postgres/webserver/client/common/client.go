@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/certs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/certs"
 )
 
 // NewHTTPClient returns a client capable of executing HTTP methods both in HTTPS and HTTP depending on the passed

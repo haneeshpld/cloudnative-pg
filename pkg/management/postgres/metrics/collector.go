@@ -29,9 +29,9 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/metrics/histogram"
-	postgresutils "github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/metrics/histogram"
+	postgresutils "github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/utils"
 )
 
 // QueriesCollector is the implementation of PgCollector for a certain

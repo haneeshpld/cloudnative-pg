@@ -25,7 +25,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"k8s.io/utils/ptr"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/pool"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/pool"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

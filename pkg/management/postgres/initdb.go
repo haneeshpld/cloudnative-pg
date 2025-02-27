@@ -37,14 +37,14 @@ import (
 	"github.com/jackc/pgx/v5"
 	ctrl "sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/configfile"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/external"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/constants"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/logicalimport"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/pool"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/system"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/configfile"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/external"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/constants"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/logicalimport"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/pool"
+	"github.com/haneeshpld/cloudnative-pg/pkg/system"
 )
 
 // InitInfo contains all the info needed to bootstrap a new PostgreSQL instance

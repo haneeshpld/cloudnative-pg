@@ -25,7 +25,7 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/versions"
+	"github.com/haneeshpld/cloudnative-pg/pkg/versions"
 )
 
 type pgControlDataKey = string

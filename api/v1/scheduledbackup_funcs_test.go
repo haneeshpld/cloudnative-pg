@@ -17,7 +17,7 @@ limitations under the License.
 package v1
 
 import (
-	"github.com/cloudnative-pg/cloudnative-pg/internal/configuration"
+	"github.com/haneeshpld/cloudnative-pg/internal/configuration"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

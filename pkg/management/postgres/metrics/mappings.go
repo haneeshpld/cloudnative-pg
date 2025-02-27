@@ -25,7 +25,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	postgresutils "github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/utils"
+	postgresutils "github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/utils"
 )
 
 // MetricMap stores the prometheus metric description which a given column will

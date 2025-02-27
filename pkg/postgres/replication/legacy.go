@@ -23,7 +23,7 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // legacySynchronousStandbyNames sets the standby node list with the

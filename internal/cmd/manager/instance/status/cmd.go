@@ -29,11 +29,11 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"github.com/spf13/cobra"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/certs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/common"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/local"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/url"
+	"github.com/haneeshpld/cloudnative-pg/pkg/certs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/common"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/local"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/url"
 )
 
 // NewCmd create the "instance status" subcommand

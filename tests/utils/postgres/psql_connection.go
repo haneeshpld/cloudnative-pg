@@ -28,11 +28,11 @@ import (
 	"k8s.io/client-go/tools/portforward"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/configfile"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/pool"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/clusterutils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/forwardconnection"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/secrets"
+	"github.com/haneeshpld/cloudnative-pg/pkg/configfile"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/pool"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/clusterutils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/forwardconnection"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/secrets"
 )
 
 // PSQLForwardConnection manages the creation of a port-forwarding to open a new database connection

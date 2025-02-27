@@ -32,7 +32,7 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/fileutils/compatibility"
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/concurrency"
+	"github.com/haneeshpld/cloudnative-pg/pkg/concurrency"
 )
 
 type lineHandler func(line []byte)

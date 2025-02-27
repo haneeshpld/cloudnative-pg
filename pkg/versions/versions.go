@@ -26,7 +26,7 @@ const (
 	DefaultImageName = "ghcr.io/cloudnative-pg/postgresql:17.2"
 
 	// DefaultOperatorImageName is the default operator image used by the controller in the pods running PostgreSQL
-	DefaultOperatorImageName = "ghcr.io/cloudnative-pg/cloudnative-pg:1.25.0"
+	DefaultOperatorImageName = "ghcr.io/haneeshpld/cloudnative-pg:1.25.0"
 )
 
 // BuildInfo is a struct containing all the info about the build

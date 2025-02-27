@@ -21,7 +21,7 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/fileutils"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
 )
 
 type (

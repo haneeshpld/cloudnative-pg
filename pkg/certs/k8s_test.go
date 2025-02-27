@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	controllerScheme "github.com/cloudnative-pg/cloudnative-pg/internal/scheme"
+	controllerScheme "github.com/haneeshpld/cloudnative-pg/internal/scheme"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

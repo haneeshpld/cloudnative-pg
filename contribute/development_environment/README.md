@@ -159,11 +159,11 @@ MacOS Airplay uses port 5000 and can interfere with docker repository port. Make
 ## Forking the repository
 
 Unless you are a developer with write permissions on the main repository of
-[CloudNativePG](https://github.com/cloudnative-pg/cloudnative-pg), in order to
+[CloudNativePG](https://github.com/haneeshpld/cloudnative-pg), in order to
 propose a pull request for CloudNativePG you need to fork the repo.
 
 Please follow the [instructions provided by Github about forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo),
-making sure you use the [cloudnative-pg/cloudnative-pg](https://github.com/cloudnative-pg/cloudnative-pg)
+making sure you use the [cloudnative-pg/cloudnative-pg](https://github.com/haneeshpld/cloudnative-pg)
 instead of `octocat/Spoon-Knife` - which is used in the example.
 
 Then clone it on your local environment and proceed with the next step.

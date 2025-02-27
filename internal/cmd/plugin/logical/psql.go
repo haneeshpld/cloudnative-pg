@@ -19,8 +19,8 @@ package logical
 import (
 	"context"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/plugin/psql"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/plugin/psql"
 )
 
 // RunSQL execs a SQL statement while connected via `psql` to

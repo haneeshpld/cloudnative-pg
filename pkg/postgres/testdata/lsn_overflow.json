@@ -452,7 +452,7 @@
           "initContainers": [
             {
               "name": "bootstrap-controller",
-              "image": "ghcr.io/cloudnative-pg/cloudnative-pg-testing:main@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
+              "image": "ghcr.io/haneeshpld/cloudnative-pg-testing:main@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
               "command": [
                 "/manager",
                 "bootstrap",
@@ -770,7 +770,7 @@
               "ready": true,
               "restartCount": 0,
               "image": "sha256:af7b34df0036a4b89f6c19b6c2fac884295cb05ebe80b0039f624733df2f54fe",
-              "imageID": "ghcr.io/cloudnative-pg/cloudnative-pg-testing@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
+              "imageID": "ghcr.io/haneeshpld/cloudnative-pg-testing@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
               "containerID": "containerd://427a187550b0cf110edb9ee4f32227d7ed819b127834b1917f2034ddb797a1df"
             }
           ],
@@ -1261,7 +1261,7 @@
           "initContainers": [
             {
               "name": "bootstrap-controller",
-              "image": "ghcr.io/cloudnative-pg/cloudnative-pg-testing:main@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
+              "image": "ghcr.io/haneeshpld/cloudnative-pg-testing:main@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
               "command": [
                 "/manager",
                 "bootstrap",
@@ -1579,7 +1579,7 @@
               "ready": true,
               "restartCount": 0,
               "image": "sha256:af7b34df0036a4b89f6c19b6c2fac884295cb05ebe80b0039f624733df2f54fe",
-              "imageID": "ghcr.io/cloudnative-pg/cloudnative-pg-testing@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
+              "imageID": "ghcr.io/haneeshpld/cloudnative-pg-testing@sha256:ef23605dfb2f2da3c9ee421aec0cc2ef4182a18d6d025604c717e6e60ac96750",
               "containerID": "containerd://150389f0f62f838673a28c58db5a1917e3ba132c666e7431aca347f3e7030c94"
             }
           ],

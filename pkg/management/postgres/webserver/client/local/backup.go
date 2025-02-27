@@ -25,9 +25,9 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/remote"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/url"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/remote"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/url"
 )
 
 // BackupClient is the interface to interact with the backup endpoints

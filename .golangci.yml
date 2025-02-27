@@ -5,7 +5,7 @@ linters-settings:
     sections:
       - standard
       - default
-      - prefix(github.com/cloudnative-pg/cloudnative-pg)
+      - prefix(github.com/haneeshpld/cloudnative-pg)
       - blank
       - dot
   gosec:

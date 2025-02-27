@@ -25,8 +25,8 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"github.com/spf13/cobra"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/archiver"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/local"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/archiver"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/local"
 )
 
 // errSwitchoverInProgress is raised when there is a switchover in progress

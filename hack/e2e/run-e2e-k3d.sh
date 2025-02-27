@@ -76,7 +76,7 @@ main() {
     #
     if [ -z "${CONTROLLER_IMG:-}" ]; then
       IMAGE_TAG="$( (git symbolic-ref -q --short HEAD || git describe --tags --exact-match) | tr / -)"
-      export CONTROLLER_IMG="ghcr.io/cloudnative-pg/cloudnative-pg-testing:${IMAGE_TAG}"
+      export CONTROLLER_IMG="ghcr.io/haneeshpld/cloudnative-pg-testing:${IMAGE_TAG}"
     fi
   else
     unset CONTROLLER_IMG

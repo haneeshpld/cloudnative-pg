@@ -27,10 +27,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	ctrl "sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/concurrency"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/metricserver"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/concurrency"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/metricserver"
 )
 
 // InstanceReconciler reconciles the status of the Cluster resource with

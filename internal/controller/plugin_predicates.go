@@ -19,7 +19,7 @@ package controller
 import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 var isPluginService = func(object client.Object, operatorNamespace string) bool {

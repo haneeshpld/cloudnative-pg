@@ -22,8 +22,8 @@ import (
 
 	"github.com/cloudnative-pg/cnpg-i/pkg/operator"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/connection"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/connection"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

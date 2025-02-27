@@ -25,9 +25,9 @@ import (
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	v1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	schemeBuilder "github.com/cloudnative-pg/cloudnative-pg/internal/scheme"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	v1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	schemeBuilder "github.com/haneeshpld/cloudnative-pg/internal/scheme"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

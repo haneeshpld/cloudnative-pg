@@ -24,7 +24,7 @@ import (
 
 	restore "github.com/cloudnative-pg/cnpg-i/pkg/restore/job"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // ErrNoPluginSupportsRestoreJobHooksCapability is raised when no plugin supports the restore job hooks capability

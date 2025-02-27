@@ -25,8 +25,8 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/configparser"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/versions"
+	"github.com/haneeshpld/cloudnative-pg/pkg/configparser"
+	"github.com/haneeshpld/cloudnative-pg/pkg/versions"
 )
 
 var configurationLog = log.WithName("configuration")

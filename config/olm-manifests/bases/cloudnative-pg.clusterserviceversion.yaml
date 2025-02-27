@@ -10,7 +10,7 @@ metadata:
     certified: "true"
     createdAt:
     containerImage: $(OPERATOR_IMAGE_NAME)
-    repository: https://github.com/cloudnative-pg/cloudnative-pg
+    repository: https://github.com/haneeshpld/cloudnative-pg
     support: Community
     olm.skipRange: '>= 1.18.0 < ${VERSION}'
     features.operators.openshift.io/disconnected: "true"

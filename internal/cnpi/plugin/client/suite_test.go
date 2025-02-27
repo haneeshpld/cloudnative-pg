@@ -29,7 +29,7 @@ import (
 	"github.com/cloudnative-pg/cnpg-i/pkg/wal"
 	"google.golang.org/grpc"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/connection"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/connection"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

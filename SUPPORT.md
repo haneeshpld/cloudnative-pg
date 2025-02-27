@@ -14,8 +14,8 @@ or content provided by the listed companies or individuals.*
 ## How to Get Listed
 
 To have your company or personal services featured on this list, please submit
-a [pull request to the CloudNativePG website](https://github.com/cloudnative-pg/cloudnative-pg.github.io)
-by adding a `.md` file in the [`content/support` folder](https://github.com/cloudnative-pg/cloudnative-pg.github.io/tree/main/content/support)
+a [pull request to the CloudNativePG website](https://github.com/haneeshpld/cloudnative-pg.github.io)
+by adding a `.md` file in the [`content/support` folder](https://github.com/haneeshpld/cloudnative-pg.github.io/tree/main/content/support)
 containing the following information:
 
 1. **Organisation Name**: Clearly specify the name of your company or entity.

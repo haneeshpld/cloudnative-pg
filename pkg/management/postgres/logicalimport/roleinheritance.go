@@ -23,7 +23,7 @@ import (
 	"github.com/cloudnative-pg/machinery/pkg/log"
 	"github.com/jackc/pgx/v5"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/pool"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/pool"
 )
 
 type roleInheritanceManager struct {

@@ -41,17 +41,17 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/handler"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	cnpgiClient "github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/client"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/repository"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/certs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver/client/remote"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/reconciler/backup/volumesnapshot"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/reconciler/persistentvolumeclaim"
-	resourcestatus "github.com/cloudnative-pg/cloudnative-pg/pkg/resources/status"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/specs"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	cnpgiClient "github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/client"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/repository"
+	"github.com/haneeshpld/cloudnative-pg/pkg/certs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver/client/remote"
+	"github.com/haneeshpld/cloudnative-pg/pkg/reconciler/backup/volumesnapshot"
+	"github.com/haneeshpld/cloudnative-pg/pkg/reconciler/persistentvolumeclaim"
+	resourcestatus "github.com/haneeshpld/cloudnative-pg/pkg/resources/status"
+	"github.com/haneeshpld/cloudnative-pg/pkg/specs"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // backupPhase indicates the path inside the Backup kind

@@ -25,7 +25,7 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/log"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/webserver"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/webserver"
 )
 
 func executeRequestWithError[T any](

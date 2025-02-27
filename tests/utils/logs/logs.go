@@ -26,7 +26,7 @@ import (
 
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/pods"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/pods"
 )
 
 // ParseJSONLogs returns the pod's logs of a given pod name,

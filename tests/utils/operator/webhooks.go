@@ -28,8 +28,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/controller"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/objects"
+	"github.com/haneeshpld/cloudnative-pg/internal/cmd/manager/controller"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/objects"
 )
 
 // GetMutatingWebhookByName get the MutatingWebhook filtered by the name of one

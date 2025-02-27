@@ -546,7 +546,7 @@ jobs:
           COMMIT_MESSAGE: |
             ${{ needs.buildx.outputs.commit_msg }}
 
-            https://github.com/cloudnative-pg/cloudnative-pg/commit/${{ needs.buildx.outputs.commit_sha }}
+            https://github.com/haneeshpld/cloudnative-pg/commit/${{ needs.buildx.outputs.commit_sha }}
         run: |
           # Skip creating the commit if there are no changes
           [ -n "$(git status -s)" ] || exit 0

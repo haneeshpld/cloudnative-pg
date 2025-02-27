@@ -35,15 +35,15 @@ import (
 	apierrs "k8s.io/apimachinery/pkg/api/errors"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/concurrency"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/constants"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/readiness"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/upgrade"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/url"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/pkg/concurrency"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/constants"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/readiness"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/upgrade"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/url"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 type remoteWebserverEndpoints struct {

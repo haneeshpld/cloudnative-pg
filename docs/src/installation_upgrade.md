@@ -7,12 +7,12 @@
 The operator can be installed like any other resource in Kubernetes,
 through a YAML manifest applied via `kubectl`.
 
-You can install the [latest operator manifest](https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/release-1.25/releases/cnpg-1.25.0.yaml)
+You can install the [latest operator manifest](https://raw.githubusercontent.com/haneeshpld/cloudnative-pg/release-1.25/releases/cnpg-1.25.0.yaml)
 for this minor release as follows:
 
 ```sh
 kubectl apply --server-side -f \
-  https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/release-1.25/releases/cnpg-1.25.0.yaml
+  https://raw.githubusercontent.com/haneeshpld/cloudnative-pg/release-1.25/releases/cnpg-1.25.0.yaml
 ```
 
 You can verify that with:
@@ -45,7 +45,7 @@ for a more comprehensive example.
     ports, as explained in the official
     [docs](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters#add_firewall_rules)
     and by this
-    [issue](https://github.com/cloudnative-pg/cloudnative-pg/issues/1360).
+    [issue](https://github.com/haneeshpld/cloudnative-pg/issues/1360).
     You'll need to either change the `targetPort` in the webhook service, to be
     one of the allowed ones, or open the webhooks' port (`9443`) on the
     firewall.

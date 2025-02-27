@@ -22,7 +22,7 @@ import (
 	"sort"
 	"strings"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // placeholderInstanceNameSuffix is the name of the suffix to be added to the

@@ -17,7 +17,7 @@ limitations under the License.
 package replication
 
 import (
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // GetExpectedSyncReplicasNumber computes the actual number of required synchronous replicas

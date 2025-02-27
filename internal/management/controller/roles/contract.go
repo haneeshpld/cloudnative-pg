@@ -23,7 +23,7 @@ import (
 
 	"github.com/jackc/pgx/v5/pgtype"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
 )
 
 // DatabaseRole represents the role information read from / written to the Database

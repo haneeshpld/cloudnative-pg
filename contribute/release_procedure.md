@@ -81,7 +81,7 @@ activities:
 
 - **Documentation on website:** Remember that after the release, you will
   need to update the documentation in the
-  [website project](https://github.com/cloudnative-pg/cloudnative-pg.github.io)
+  [website project](https://github.com/haneeshpld/cloudnative-pg.github.io)
   for each of the supported releases. (See the section **Documentation on the
   website** below)
 
@@ -144,12 +144,12 @@ This procedure must happen immediately before starting the release.
 **IMPORTANT:** Now we add support for the automatic backporting of merged pull requests from main to the new release branch.
 Once the new release branch is created, go back to `main` and submit a pull
 request to update the
-[backport](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/workflows/backport.yml),
-[continuous delivery](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/workflows/continuous-delivery.yml),
-[continuous integration](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/workflows/continuous-integration.yml)
-and [Renovate](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/renovate.json5)
+[backport](https://github.com/haneeshpld/cloudnative-pg/blob/main/.github/workflows/backport.yml),
+[continuous delivery](https://github.com/haneeshpld/cloudnative-pg/blob/main/.github/workflows/continuous-delivery.yml),
+[continuous integration](https://github.com/haneeshpld/cloudnative-pg/blob/main/.github/workflows/continuous-integration.yml)
+and [Renovate](https://github.com/haneeshpld/cloudnative-pg/blob/main/.github/renovate.json5)
 workflows to support the new release branch.
-And also remember to update the [github issue template](https://github.com/cloudnative-pg/cloudnative-pg/blob/main/.github/ISSUE_TEMPLATE/bug.yml).
+And also remember to update the [github issue template](https://github.com/haneeshpld/cloudnative-pg/blob/main/.github/ISSUE_TEMPLATE/bug.yml).
 
 ## Release steps
 
@@ -181,7 +181,7 @@ releases of CloudNativePG:
    **IMPORTANT**, if you make commits to the PR, the merge message
    proposed by GH will be different. Make sure the title is
    `Version tag to X.Y.Z`, otherwise some of the automation won't work.
-4. Wait until all [GitHub Actions](https://github.com/cloudnative-pg/cloudnative-pg/actions)
+4. Wait until all [GitHub Actions](https://github.com/haneeshpld/cloudnative-pg/actions)
    complete successfully.
 5. Perform manual smoke tests to verify that installation instructions work on
    your workstation: with a local `kind` cluster up, you should be able to
@@ -207,10 +207,10 @@ releases of CloudNativePG:
 
 The documentation, including the release notes, is created in the `cloudnative-pg`
 repository but published in the [CloudNativePG public webpage](https://cloudnative-pg.io)
-through the [`cloudnative-pg.github.io`](https://github.com/cloudnative-pg/cloudnative-pg.github.io)
+through the [`cloudnative-pg.github.io`](https://github.com/haneeshpld/cloudnative-pg.github.io)
 repository.
 
-The [`README`](https://github.com/cloudnative-pg/cloudnative-pg.github.io#readme)
+The [`README`](https://github.com/haneeshpld/cloudnative-pg.github.io#readme)
 in that repository has complete instructions on the deployment of documentation
 for new minor releases as well as patch releases.
 

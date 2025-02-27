@@ -23,7 +23,7 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/blang/semver"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/postgres"
+	"github.com/haneeshpld/cloudnative-pg/pkg/postgres"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

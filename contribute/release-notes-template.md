@@ -18,7 +18,7 @@ git log ${LAST_TAG}.. --oneline --pretty="format:%h;%s" > log.csv
 History of user-visible changes in the 1.XX minor release of CloudNativePG.
 
 For a complete list of changes, please refer to the
-[commits](https://github.com/cloudnative-pg/cloudnative-pg/commits/release-1.XXX
+[commits](https://github.com/haneeshpld/cloudnative-pg/commits/release-1.XXX
 on the release branch in GitHub.
 
 ## Version 1.XX.0-rc1

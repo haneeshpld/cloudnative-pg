@@ -22,7 +22,7 @@ import (
 
 	"github.com/cloudnative-pg/machinery/pkg/types"
 
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // TokenVerificationError are raised when the promotion token

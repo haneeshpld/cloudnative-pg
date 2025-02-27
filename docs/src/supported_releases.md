@@ -52,7 +52,7 @@ provided by the community, see [What we mean by support](#what-we-mean-by-suppor
 | Patch             | Same as the corresponding minor release                                                                               | Users are encouraged to adopt patch releases as soon as they are available for a given release.                |
 | Security Patch    | Same as a patch, however, it doesn't contain any additional code other than the security fix from the previous patch  | Given the nature of security fixes, users are **strongly** encouraged to adopt security patches after release. |
 
-You can find available releases on the [releases page](https://github.com/cloudnative-pg/cloudnative-pg/releases).
+You can find available releases on the [releases page](https://github.com/haneeshpld/cloudnative-pg/releases).
 
 You can find high-level more information for each minor and patch release in
 the [release notes](release_notes.md).
@@ -133,7 +133,7 @@ version of PostgreSQL, we might not be able to help you.
 !!! Important
     Dates in the future are uncertain and might change. This applies to Kubernetes versions, too.
     Updates and changes on the release schedule will be communicated in the
-    [Release updates](https://github.com/cloudnative-pg/cloudnative-pg/discussions/categories/release-updates)
+    [Release updates](https://github.com/haneeshpld/cloudnative-pg/discussions/categories/release-updates)
     discussion in the main GitHub repository.
 
 ## Old releases
@@ -184,7 +184,7 @@ Technical support
 :   Technical assistance is offered on a best-effort basis for supported
     releases only. You can request support from the community on the
     [CloudNativePG Slack](https://cloudnativepg.slack.com/) (in the `#general` channel),
-    or using [GitHub Discussions](https://github.com/cloudnative-pg/cloudnative-pg/discussions).
+    or using [GitHub Discussions](https://github.com/haneeshpld/cloudnative-pg/discussions).
 
 Security and bug fixes
 :   We backport important bug fixes — including security fixes - to all

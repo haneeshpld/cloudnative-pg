@@ -27,9 +27,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/internal/management/controller/tablespaces/infrastructure"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres/readiness"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/internal/management/controller/tablespaces/infrastructure"
+	"github.com/haneeshpld/cloudnative-pg/pkg/management/postgres/readiness"
 )
 
 // Reconcile is the main reconciliation loop for the instance

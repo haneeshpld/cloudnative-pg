@@ -1,4 +1,4 @@
-module github.com/cloudnative-pg/cloudnative-pg
+module github.com/haneeshpld/cloudnative-pg
 
 go 1.23.5
 

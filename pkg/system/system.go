@@ -18,7 +18,7 @@ limitations under the License.
 package system
 
 import (
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/system/compatibility"
+	"github.com/haneeshpld/cloudnative-pg/pkg/system/compatibility"
 )
 
 const (

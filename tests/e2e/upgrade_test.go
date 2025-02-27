@@ -34,18 +34,18 @@ import (
 	"k8s.io/utils/ptr"
 	ctrlclient "sigs.k8s.io/controller-runtime/pkg/client"
 
-	apiv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
-	"github.com/cloudnative-pg/cloudnative-pg/tests"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/clusterutils"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/exec"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/minio"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/namespaces"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/operator"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/postgres"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/proxy"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/run"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/secrets"
-	"github.com/cloudnative-pg/cloudnative-pg/tests/utils/timeouts"
+	apiv1 "github.com/haneeshpld/cloudnative-pg/api/v1"
+	"github.com/haneeshpld/cloudnative-pg/tests"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/clusterutils"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/exec"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/minio"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/namespaces"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/operator"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/postgres"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/proxy"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/run"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/secrets"
+	"github.com/haneeshpld/cloudnative-pg/tests/utils/timeouts"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -526,7 +526,7 @@ var _ = Describe("Upgrade", Label(tests.LabelUpgrade, tests.LabelNoOpenshift), O
 				// rollout of Pods even if online upgrade is
 				// enabled. This happens because of the
 				// following PR:
-				// https://github.com/cloudnative-pg/cloudnative-pg/pull/5503
+				// https://github.com/haneeshpld/cloudnative-pg/pull/5503
 				//
 				// This E2e would correctly detect that and trigger a failure.
 				// To avoid this, just for this release, we disable the pod

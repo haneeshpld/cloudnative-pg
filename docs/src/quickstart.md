@@ -192,7 +192,7 @@ helm repo add prometheus-community \
   https://prometheus-community.github.io/helm-charts
 
 helm upgrade --install \
-  -f https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/main/docs/src/samples/monitoring/kube-stack-config.yaml \
+  -f https://raw.githubusercontent.com/haneeshpld/cloudnative-pg/main/docs/src/samples/monitoring/kube-stack-config.yaml \
   prometheus-community \
   prometheus-community/kube-prometheus-stack
 ```
@@ -276,7 +276,7 @@ You can now define some alerts by creating a `prometheusRule`:
 
 ``` sh
 kubectl apply -f \
-  https://raw.githubusercontent.com/cloudnative-pg/cloudnative-pg/main/docs/src/samples/monitoring/prometheusrule.yaml
+  https://raw.githubusercontent.com/haneeshpld/cloudnative-pg/main/docs/src/samples/monitoring/prometheusrule.yaml
 ```
 
 You should see the default alerts now:

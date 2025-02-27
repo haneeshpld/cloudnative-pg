@@ -36,8 +36,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	"sigs.k8s.io/controller-runtime/pkg/predicate"
 
-	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/repository"
-	"github.com/cloudnative-pg/cloudnative-pg/pkg/utils"
+	"github.com/haneeshpld/cloudnative-pg/internal/cnpi/plugin/repository"
+	"github.com/haneeshpld/cloudnative-pg/pkg/utils"
 )
 
 // PluginReconciler reconciles CNPG-i plugins
