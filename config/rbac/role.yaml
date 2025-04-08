@@ -140,6 +140,7 @@ rules:
   - backups
   - clusters
   - databases
+  - pgadmins
   - poolers
   - publications
   - scheduledbackups
@@ -157,6 +158,7 @@ rules:
   resources:
   - backups/status
   - databases/status
+  - pgadmins/status
   - publications/status
   - scheduledbackups/status
   - subscriptions/status
@@ -177,6 +179,7 @@ rules:
   - postgresql.cnpg.io
   resources:
   - clusters/finalizers
+  - pgadmins/finalizers
   - poolers/finalizers
   verbs:
   - update

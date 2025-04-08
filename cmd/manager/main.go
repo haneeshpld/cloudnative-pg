@@ -33,6 +33,7 @@ import (
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/controller"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/debug"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/instance"
+	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/pgadmin" // NEW: PgAdmin command registration
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/pgbouncer"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/show"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cmd/manager/walarchive"
@@ -67,6 +68,7 @@ func main() {
 	cmd.AddCommand(versions.NewCmd())
 	cmd.AddCommand(pgbouncer.NewCmd())
 	cmd.AddCommand(debug.NewCmd())
+	cmd.AddCommand(pgadmin.NewCmd()) // NEW: Adds the PgAdmin subcommand
 
 	if err := cmd.Execute(); err != nil {
 		os.Exit(1)

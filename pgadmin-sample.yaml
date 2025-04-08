@@ -1,0 +1,12 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: PgAdmin
+metadata:
+  name: pgadmin-sample
+  namespace: cnpg-system
+spec:
+  defaultEmail: admin@example.com
+  defaultPassword: admin
+  replicas: 1
+  image: ghcr.io/haneeshpld/pgadmin4-nonroot:latest
+
+

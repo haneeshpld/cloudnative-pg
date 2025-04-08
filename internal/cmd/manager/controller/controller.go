@@ -35,6 +35,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/metrics/server"
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 
+	postgresqlv1 "github.com/cloudnative-pg/cloudnative-pg/api/v1"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/cnpi/plugin/repository"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/configuration"
 	"github.com/cloudnative-pg/cloudnative-pg/internal/controller"
@@ -50,6 +51,10 @@ var (
 	scheme   = schemeBuilder.BuildWithAllKnownScheme()
 	setupLog = log.WithName("setup")
 )
+
+func init() {
+	_ = postgresqlv1.AddToScheme(scheme)
+}
 
 const (
 	// WebhookSecretName is the name of the secret where the certificates
@@ -231,6 +236,16 @@ func RunController(
 		setupLog.Error(err, "unable to create controller", "controller", "Cluster")
 		return err
 	}
+
+	setupLog.Info("Initializing PgAdmin controller")
+	if err := (&controller.PgAdminReconciler{
+		Client: mgr.GetClient(),
+		Scheme: mgr.GetScheme(),
+	}).SetupWithManager(mgr); err != nil {
+		setupLog.Error(err, "unable to create PgAdmin controller")
+		return err
+	}
+	setupLog.Info("PgAdmin controller initialized")
 
 	if err = controller.NewBackupReconciler(
 		mgr,

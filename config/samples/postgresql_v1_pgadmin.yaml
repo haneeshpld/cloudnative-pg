@@ -1,0 +1,9 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: PgAdmin
+metadata:
+  labels:
+    app.kubernetes.io/name: cloudnative-pg-kubebuilderv4
+    app.kubernetes.io/managed-by: kustomize
+  name: pgadmin-sample
+spec:
+  # TODO(user): Add fields here

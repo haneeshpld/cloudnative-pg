@@ -1,5 +1,6 @@
 #
-# Copyright The CloudNativePG Contributors
+# Copyright © contributors to CloudNativePG, established as
+# CloudNativePG a Series of LF Projects, LLC.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,10 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# SPDX-License-Identifier: Apache-2.0
+#
 
 # Image URL to use all building/pushing image targets
-IMAGE_NAME ?= ghcr.io/haneeshpld/cloudnative-pg-testing
-DOCKER_BUILD ?= docker buildx build --push --platform=linux/amd64,linux/arm64
+IMAGE_NAME ?= ghcr.io/cloudnative-pg/cloudnative-pg-testing
 
 # Prevent e2e tests to proceed with empty tag which
 # will be considered as "latest".
@@ -45,10 +47,10 @@ POSTGRES_IMAGE_NAME ?= $(shell grep 'DefaultImageName.*=' "pkg/versions/versions
 KUSTOMIZE_VERSION ?= v5.6.0
 CONTROLLER_TOOLS_VERSION ?= v0.17.2
 GENREF_VERSION ?= 015aaac611407c4fe591bc8700d2c67b7521efca
-GORELEASER_VERSION ?= v2.7.0
+GORELEASER_VERSION ?= v2.8.1
 SPELLCHECK_VERSION ?= 0.47.0
 WOKE_VERSION ?= 0.19.0
-OPERATOR_SDK_VERSION ?= v1.39.1
+OPERATOR_SDK_VERSION ?= v1.39.2
 OPM_VERSION ?= v1.51.0
 PREFLIGHT_VERSION ?= 1.12.1
 OPENSHIFT_VERSIONS ?= v4.12-v4.18
@@ -138,7 +140,7 @@ build-plugin-race: generate fmt vet ## Build plugin binary.
 run: generate fmt vet manifests ## Run against the configured Kubernetes cluster in ~/.kube/config.
 	go run ./cmd/manager
 
-docker-build: go-releaser ## Build the docker image with multi-platform support.
+docker-build: go-releaser ## Build the docker image.
 	GOOS=linux GOARCH=${ARCH} GOPATH=$(go env GOPATH) DATE=${DATE} COMMIT=${COMMIT} VERSION=${VERSION} \
 	  $(GO_RELEASER) build --skip=validate --clean --single-target $(if $(VERSION),,--snapshot); \
 	builder_name_option=""; \
@@ -146,8 +148,7 @@ docker-build: go-releaser ## Build the docker image with multi-platform support.
 	  builder_name_option="--builder ${BUILDER_NAME}"; \
 	fi; \
 	DOCKER_BUILDKIT=1 buildVersion=${VERSION} revision=${COMMIT} \
-	  docker buildx bake $${builder_name_option} \
-	  --set=*.platform="linux/amd64,linux/arm64" \
+	  docker buildx bake $${builder_name_option} --set=*.platform="linux/${ARCH}" \
 	  --set distroless.tags="$${CONTROLLER_IMG}" \
 	  --push distroless
 
@@ -166,7 +167,7 @@ olm-bundle: manifests kustomize operator-sdk ## Build the bundle for OLM install
 	$(OPERATOR_SDK) generate bundle --verbose --overwrite --manifests --metadata --package cloudnative-pg --channels stable-v1 --use-image-digests --default-channel stable-v1 --version "${VERSION}" ; \
 	echo -e "\n  # OpenShift annotations." >> bundle/metadata/annotations.yaml ;\
 	echo -e "  com.redhat.openshift.versions: $(OPENSHIFT_VERSIONS)" >> bundle/metadata/annotations.yaml ;\
-	DOCKER_BUILDKIT=1 $(DOCKER_BUILD) -f bundle.Dockerfile --platform linux/amd64,linux/arm64 -t ${BUNDLE_IMG} . ;\
+	DOCKER_BUILDKIT=1 docker build --push --no-cache -f bundle.Dockerfile -t ${BUNDLE_IMG} . ;\
 	export BUNDLE_IMG="${BUNDLE_IMG}"
 
 olm-catalog: olm-bundle opm ## Build and push the index image for OLM Catalog
@@ -184,7 +185,7 @@ olm-catalog: olm-bundle opm ## Build and push the index image for OLM Catalog
 	$(OPM) validate catalog/ ;\
 	$(OPM) index add --mode semver --container-tool docker --bundles "${BUNDLE_IMG}" --tag "${INDEX_IMG}" ;\
 	docker push ${INDEX_IMG} ;\
-	DOCKER_BUILDKIT=1 docker build --push -f catalog.Dockerfile --platform "linux/amd64,linux/arm64" -t ${CATALOG_IMG} . ;\
+	DOCKER_BUILDKIT=1 docker build --push -f catalog.Dockerfile -t ${CATALOG_IMG} . ;\
 	echo -e "apiVersion: operators.coreos.com/v1alpha1\n\
 	kind: CatalogSource\n\
 	metadata:\n\
@@ -217,7 +218,8 @@ generate-manifest: manifests kustomize ## Generate manifest used for deployment.
 		$(KUSTOMIZE) edit set image controller="${CONTROLLER_IMG}" ;\
 		$(KUSTOMIZE) edit add patch --path env_override.yaml ;\
 		$(KUSTOMIZE) edit add configmap controller-manager-env \
-			--from-literal="POSTGRES_IMAGE_NAME=${POSTGRES_IMAGE_NAME}" ;\
+			--from-literal="POSTGRES_IMAGE_NAME=${POSTGRES_IMAGE_NAME}" \
+			--from-literal="STANDBY_TCP_USER_TIMEOUT=5000" ;\
 	} ;\
 	mkdir -p ${DIST_PATH} ;\
 	$(KUSTOMIZE) build $$CONFIG_TMP_DIR/default > ${OPERATOR_MANIFEST_PATH} ;\
@@ -228,10 +230,6 @@ manifests: controller-gen ## Generate manifests e.g. CRD, RBAC etc.
 
 generate: controller-gen ## Generate code.
 	$(CONTROLLER_GEN) object:headerFile="hack/boilerplate.go.txt" paths="./..."
-
-deploy-locally: kind-cluster ## Build and deploy operator in local cluster
-	set -e ;\
-	hack/setup-cluster.sh -n1 load deploy
 
 olm-scorecard: operator-sdk ## Run the Scorecard test from operator-sdk
 	$(OPERATOR_SDK) scorecard ${BUNDLE_IMG} --wait-time 60s --verbose
@@ -350,14 +348,6 @@ echo "Downloading $(2)" ;\
 GOBIN=$(PROJECT_DIR)/bin go install $(2) ;\
 }
 endef
-
-kind-cluster: ## Create KinD cluster to run operator locally
-	set -e ;\
-	hack/setup-cluster.sh -n1 create
-
-kind-cluster-destroy: ## Destroy KinD cluster created using kind-cluster command
-	set -e ;\
-	hack/setup-cluster.sh -n1 destroy
 
 .PHONY: operator-sdk
 OPERATOR_SDK = $(LOCALBIN)/operator-sdk

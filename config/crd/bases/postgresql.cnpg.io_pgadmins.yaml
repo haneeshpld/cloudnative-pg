@@ -1,0 +1,69 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.17.2
+  name: pgadmins.postgresql.cnpg.io
+spec:
+  group: postgresql.cnpg.io
+  names:
+    kind: PgAdmin
+    listKind: PgAdminList
+    plural: pgadmins
+    singular: pgadmin
+  scope: Namespaced
+  versions:
+  - name: v1
+    schema:
+      openAPIV3Schema:
+        description: PgAdmin is the Schema for the pgadmins API
+        properties:
+          apiVersion:
+            description: |-
+              APIVersion defines the versioned schema of this representation of an object.
+              Servers should convert recognized schemas to the latest internal value, and
+              may reject unrecognized values.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+            type: string
+          kind:
+            description: |-
+              Kind is a string value representing the REST resource this object represents.
+              Servers may infer this from the endpoint the client submits requests to.
+              Cannot be updated.
+              In CamelCase.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: PgAdminSpec defines the desired state of PgAdmin
+            properties:
+              defaultEmail:
+                default: admin@example.com
+                description: DefaultEmail is the email used for the default pgAdmin
+                  account.
+                type: string
+              defaultPassword:
+                default: admin
+                description: DefaultPassword is the password for the default pgAdmin
+                  account.
+                type: string
+              image:
+                default: 'image: ghcr.io/haneeshpld/pgadmin4-nonroot:latest'
+                description: Image is the container image for pgAdmin.
+                type: string
+              replicas:
+                default: 1
+                description: Replicas is the number of pgAdmin instances.
+                format: int32
+                type: integer
+            type: object
+          status:
+            description: PgAdminStatus defines the observed state of PgAdmin
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}
